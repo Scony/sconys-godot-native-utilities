@@ -1,3 +1,5 @@
+all: format-check
+
 cloc:
 	cloc .
 
@@ -19,6 +21,9 @@ build-linux:
 build-windows:
 	scons -j$(shell nproc) platform=windows target=release
 	mv bin/win64/libsgnu.so bin/win64/libsgnu.dll
+
+format-check:
+	clang-format --style=file --dry-run -Werror src/*.[ch]pp
 
 clean:
 	scons platform=linux target=release -c
