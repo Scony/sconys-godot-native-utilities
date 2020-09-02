@@ -8,6 +8,8 @@ Bunch of useful GDNative Nodes and Scripts
     1. `make init`
     2. `make setup-linux`
     3. `make build-linux`
+    4. `make setup-windows` (make sure you have MinGW cross-toolchain available e.g. `mingw-w64-toolchain` on Arch)
+    5. `make build-windows`
 2. Enable plugin in `Project Settings/Plugins`.
 
 ## Contents
