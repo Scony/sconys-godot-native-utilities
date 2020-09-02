@@ -1,0 +1,16 @@
+[general]
+
+singleton=false
+load_once=true
+symbol_prefix="godot_"
+reloadable=false
+
+[entry]
+
+X11.64="res://addons/sconys-godot-native-utilities/bin/x11/libsgnu.so"
+Windows.64="res://addons/sconys-godot-native-utilities/bin/win64/libsgnu.dll"
+
+[dependencies]
+
+X11.64=[  ]
+Windows.64=[  ]
